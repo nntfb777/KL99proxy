@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hình ảnh của tôi</title>
+    <style>
+        /* Reset một số cài đặt mặc định của trình duyệt */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex; /* Dùng flexbox để căn giữa hình ảnh */
+            justify-content: center; /* Căn giữa theo chiều ngang */
+            align-items: center; /* Căn giữa theo chiều dọc */
+            min-height: 100vh; /* Đảm bảo trang chiếm toàn bộ chiều cao màn hình */
+            background-color: #f0f0f0; /* Màu nền nhẹ cho trang */
+            font-family: Arial, sans-serif; /* Font chữ cơ bản */
+            color: #333;
+        }
+
+        img {
+            max-width: 90%; /* Hình ảnh không vượt quá 90% chiều rộng màn hình */
+            max-height: 90vh; /* Hình ảnh không vượt quá 90% chiều cao màn hình */
+            height: auto; /* Giữ tỷ lệ khung hình */
+            display: block; /* Loại bỏ khoảng trống dưới hình ảnh */
+            border-radius: 8px; /* Bo góc hình ảnh */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ nhẹ */
+        }
+
+        /* CSS cho màn hình nhỏ hơn */
+        @media (max-width: 600px) {
+            img {
+                max-width: 95%; /* Hình ảnh lớn hơn một chút trên di động */
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="kl99bg.jpg" alt="Đây là hình ảnh mà tôi muốn hiển thị">
+</body>
+</html>
